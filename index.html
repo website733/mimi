@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Romane - MimiFoxQuad</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #fdf6f0;
+        color: #333;
+        overflow-x: hidden;
+    }
+    header {
+        background-color: #a3d9a5;
+        padding: 40px 20px;
+        text-align: center;
+        position: relative;
+        animation: fadeIn 1.5s ease;
+    }
+    header h1 { margin: 0; font-size: 3em; }
+    header .birth { font-size: 1.2em; margin-top: 5px; font-style: italic; }
+    nav {
+        margin: 20px 0;
+        text-align: center;
+        animation: fadeIn 2s ease;
+    }
+    nav a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        transition: transform 0.3s, color 0.3s;
+    }
+    nav a:hover { color: #145a32; transform: scale(1.1); }
+    section {
+        padding: 50px 20px;
+        max-width: 1000px;
+        margin: auto;
+        opacity: 0;
+        transform: translateY(50px);
+        animation: fadeInUp 1s forwards;
+    }
+    section:nth-of-type(1) { animation-delay: 0.3s; }
+    section:nth-of-type(2) { animation-delay: 0.6s; }
+    section:nth-of-type(3) { animation-delay: 0.9s; }
+    section:nth-of-type(4) { animation-delay: 1.2s; }
+
+    .btn {
+        display: inline-block;
+        padding: 12px 25px;
+        margin: 15px 0;
+        background-color: #2e7d32;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 15px rgba(46,125,50,0.3);
+    }
+    .btn:hover {
+        background-color: #145a32;
+        transform: scale(1.1) rotate(-2deg);
+        box-shadow: 0 10px 25px rgba(46,125,50,0.6);
+        text-shadow: 0 0 8px #fff;
+    }
+
+    .carousel-wrapper {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+    .carousel {
+        display: flex;
+        gap: 15px;
+        padding: 20px 0;
+        animation: scroll 15s linear infinite;
+    }
+    .carousel img {
+        max-height: 250px;
+        border-radius: 15px;
+        flex: 0 0 auto;
+        transition: transform 0.3s;
+    }
+    .carousel img:hover { transform: scale(1.1); }
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 2em;
+    }
+
+    footer {
+        background-color: #a3d9a5;
+        text-align: center;
+        padding: 20px;
+        margin-top: 50px;
+        animation: fadeIn 2s ease;
+    }
+
+    @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Romane 🐾</h1>
+    <div class="birth">Née le 16 août</div>
+</header>
+
+<nav>
+    <a href="#about">À propos</a>
+    <a href="#contact">Contact</a>
+     <a href="#chaine">Chaîne</a>
+    <a href="#vinted">Boutique Vinted</a>
+    <a href="https://www.tiktok.com/@mimifoxquad" target="_blank">TikTok</a>
+</nav>
+
+<section id="about">
+    <h2 class="section-title">À propos de moi</h2>
+    <p>Salut ! Je suis Romane, therianne passionnée par la nature et les animaux. Ici, je partage mon univers et mes créations.</p>
+    <p>Je crée et vends des <strong>masques pour therianes</strong>, parfaits pour se sentir en harmonie avec votre côté animal 🐾.</p>
+</section>
+
+<section id="chaine">
+    <h2 class="section-title">Ma Chaîne WhatsApp</h2>
+    <p>Interagissez avec moi via ma chaîne :</p>
+    <a class="btn" href="https://tinu.be/mimi_wa_channel" target="_blank">Rejoindre la chaîne</a>
+</section>
+
+
+<section id="vinted">
+    <h2 class="section-title">Mes Créations</h2>
+    <p>Voici certaines de mes créations :</p>
+    <div class="carousel-wrapper">
+        <div class="carousel">
+            <a href="https://www.vinted.fr/member/262164040-mimifoxq" target="_blank"><img src="https://images1.vinted.net/t/04_01ae4_NRF3xUyAJQ5sX5zua4uuQ1mc/f800/1753696804.webp?s=c92e54304f31c20cb17acc13a3de5581373199ae" alt="Masque 1"></a>
+            <a href="https://www.vinted.fr/member/262164040-mimifoxq" target="_blank"><img src="https://images1.vinted.net/t/03_00ef1_PNiFip1qGbrSmqVNsxAkF7x2/f800/1753696698.webp?s=11da1f897d0772731623598f98495cd91ca8cba4" alt="Masque 2"></a>
+            <a href="https://www.vinted.fr/member/262164040-mimifoxq" target="_blank"><img src="https://images1.vinted.net/t/01_009da_odCk3rifEnC8HQ41Vs3nHUBF/f800/1752166744.webp?s=1e09ac8fc5a83f855c5138317a20ce41294b91e3" alt="Masque 3"></a>
+            <a href="https://www.vinted.fr/member/262164040-mimifoxq" target="_blank"><img src="https://images1.vinted.net/t/04_0109d_JMrHCTfq1Qb98uetmtBKYut6/f800/1752227874.webp?s=4ca777f6d880623683ea5e683c99602054b0e12e" alt="Masque 1"></a>
+            <a href="https://www.vinted.fr/member/262164040-mimifoxq" target="_blank"><img src="https://i.ibb.co/rKKWsYmT/snippit-crop-1764961307920.pnghttps://i.ibb.co/rKKWsYmT/snippit-crop-1764961307920.png" alt="Masque 2"></a>
+            <a href="https://www.vinted.fr/member/262164040-mimifoxq" target="_blank"><img src="https://i.ibb.co/sdv6K4w5/snippit-crop-1764961729243.png" alt="Masque 3"></a>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contactez-moi</h2>
+    <p>Envoyez-moi un message directement sur WhatsApp :</p>
+    <a class="btn" href="https://wa.me/33769178497" target="_blank">
+        💬 Envoyer un message WhatsApp
+    </a>
+</section>
+
+<footer>
+    <p>© 2025 mimifoxquad | Site réalisé par Kieran Simonnet</p>
+</footer>
+
+</body>
+</html>
+
